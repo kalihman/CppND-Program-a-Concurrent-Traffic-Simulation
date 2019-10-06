@@ -9,7 +9,7 @@ RUN apt update \
     && apt install -y build-essential cmake git gcc g++ cmake procps lsb-release \
         libc-ares-dev libc-ares2 libcurl4-openssl-dev libssl-dev make \
         pkg-config tar wget zlib1g-dev cppcheck valgrind \
-        libncurses5-dev libncursesw5-dev \
+        libncurses5-dev libncursesw5-dev vim \
     # Create a non-root user to use if preferred
     && groupadd --gid $USER_GID $USERNAME \
     && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
